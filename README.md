@@ -1,4 +1,36 @@
+# blob勉強用リポジトリ
+参考サイト: https://learn.microsoft.com/ja-jp/azure/developer/javascript/tutorial/browser-file-upload-azure-storage-blob?tabs=typescript%2Cuser-delegated-sas  
+[ソースコードについてのより詳細な解説はこちら](https://learn.microsoft.com/ja-jp/azure/developer/javascript/tutorial/browser-file-upload-azure-storage-blob?tabs=typescript%2Cuser-delegated-sas#upload-file-to-azure-storage-blob-with-azure-sdk-client-library)
+
+## 手元での検証手順
+リポジトリのクローン
+```
+git clone https://github.com/happy-friends-of-mitch/blob-test
+```
+
+SASトークンキーを@smaru1111まで問い合わせて、ルートディレクトリ直下に新たに.envファイルを作成。
+以下の項目を埋める。  
+```
+# .envファイル
+
+REACT_APP_AZURE_STORAGE_SAS_TOKEN=""
+REACT_APP_AZURE_STORAGE_RESOURCE_NAME=""
+```
+
+.envが作成出来たら実行。
+```
+npm i
+npm start
+```
+
+アップロードした画像が、Container itemsに表示されれば成功。
+
+![スクリーンショット (188)](https://github.com/happy-friends-of-mitch/blob-test/assets/96244711/6cdc6c1f-4a32-4856-9426-6715ea07dcaa)
+
+
+
 ---
+## 以下フォーク元のREADME
 page_type: sample
 languages:
 - javascript
